@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "h2o-dataset"
+version = "0.1.0"
+description = "PyTorch Dataset for the H2O human-to-humanoid visual-motor data"
+requires-python = ">=3.8"
+dependencies = ["numpy>=1.22", "Pillow>=9.0", "tifffile>=2023.7", "torch>=1.11"]
+
+[tool.setuptools.packages.find]
+include = ["h2o_dataset*"]
